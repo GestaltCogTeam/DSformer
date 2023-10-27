@@ -4,7 +4,7 @@ This github repository corresponds to our paper published in CIKM 2023(Dsformer:
 
 To unified manage all baselines and models from our lab, DSformer's code will be stored together with other baselines at the following link: https://github.com/zezhishao/BasicTS
 
-In the near future, I will upload the code (with commercial approval) to the above link. If you are interested in the DSformer, please get it from the corresponding link. 
+In the near future, I will upload the code (with commercial approval) to the above link (I am currently meeting the deadline and will sort out and upload the code in November.). If you are interested in the DSformer, please get it from the corresponding link. 
 
 The core hyperparameters include the following parts:
 - Input_len: History length
