@@ -7,13 +7,21 @@ To unified manage all baselines and models from our lab, DSformer's code will be
 In the near future, I will upload the code (with commercial approval) to the above link. If you are interested in the DSformer, please get it from the corresponding link. 
 
 The core hyperparameters include the following parts:
+
 Input_len: History length
+
 out_len：Future length
+
 num_id：Number of variables
+
 num_layer：Number of layers
+
 muti_head：Number of muti_head attention
+
 dropout：dropout
+
 num_samp：Number of subsequence
+
 IF_node: Whether to use variable embedding
 
 
