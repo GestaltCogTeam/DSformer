@@ -4,17 +4,24 @@ This github repository corresponds to our paper published in CIKM 2023(Dsformer:
 
 To unified manage all baselines and models from our lab, DSformer's code will be stored together with other baselines at the following link: https://github.com/zezhishao/BasicTS
 
-In the near future, I will upload the code (with commercial approval) to the above link (I am currently meeting the deadline and will sort out and upload the code in November.). If you are interested in the DSformer, please get it from the corresponding link. 
+The complete parameter Settings and training pipline are stored in the above link.
+
+The current repository stores the model files for DSformer. Please note that we have optimized the code for DSformer in order to comply with commercial regulations. After testing, the current version has improved performance.
 
 The core hyperparameters include the following parts:
 - Input_len: History length
 - out_len：Future length
 - num_id：Number of variables
-- num_layer：Number of layers
-- muti_head：Number of muti_head attention
-- dropout：dropout
-- num_samp：Number of subsequence
-- IF_node: Whether to use variable embedding
+- num_layer：Number of layers. 1 or 2
+- muti_head：Number of muti_head attention. 1 to 4
+- dropout：dropout. 0.15 to 0.3
+- num_samp：Number of subsequence. 2 or 3
+- IF_node: Whether to use variable embedding. True or False
+
+In addition, some hyperparameters related to the learning rate are given as follows:
+- Initial learning rate: 0.0002
+- Learning rate decay strategy：MultiStepLR
+- milestone = [1,15,25,50,75,100], gamme = 0.5
 
 
 If the code is helpful to you, please cite the following paper:
