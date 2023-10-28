@@ -6,8 +6,6 @@ from block.embed_block import embed
 from block.TVA_block import TVA_block_att
 from block.decoder_block import TVADE_block
 from block.revin import RevIN
-from metric.main_metric import metric
-
 
 class DSFormer(nn.Module):
     def __init__(self, Input_len, out_len, num_id, num_layer, dropout, muti_head, num_samp, IF_node):
