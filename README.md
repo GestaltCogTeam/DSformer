@@ -22,6 +22,7 @@ In addition, some hyperparameters related to the learning rate are given as foll
 - Initial learning rate: 0.0002
 - Learning rate decay strategy：MultiStepLR
 - milestone = [1,15,25,50,75,100], gamme = 0.5
+- clip_grad_norm_: max_norm = 3
 
 
 If the code is helpful to you, please cite the following paper:
