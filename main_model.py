@@ -43,7 +43,7 @@ class DSFormer(nn.Module):
         # Output [B,L,N]: B is batch size. N is the number of variables. L is the future length
 
         ### embed
-        x = self.RevIN(x.transpose(-2,-1),'norm').transpose(-2,-1)
+        x = self.RevIN(x,'norm').transpose(-2,-1)
         x_1, x_2 = self.embed_layer(x)
 
         ### encoder
@@ -56,6 +56,5 @@ class DSFormer(nn.Module):
         x = self.decoder(x)
         x = self.output(x.transpose(-2,-1))
         x = self.RevIN(x, 'denorm')
-        x = x.transpose(-2,-1)
 
         return x
