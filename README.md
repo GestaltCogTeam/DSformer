@@ -12,17 +12,18 @@ The core hyperparameters include the following parts:
 - Input_len: History length
 - out_len：Future length
 - num_id：Number of variables
-- num_layer：Number of layers. 1 or 2
-- muti_head：Number of muti_head attention. 1 to 4
+- num_layer：Number of layers. 1 or 2   (Note: In most cases, 1 is enough)
+- muti_head：Number of muti_head attention. 1 to 4  (Note: In most cases, 1 or 2 is enough)
 - dropout：dropout. 0.15 to 0.3
 - num_samp：Number of subsequence. 2 or 3
-- IF_node: Whether to use variable embedding. True or False
+- IF_node: Whether to use variable embedding. True or False (Note: Set to True for all but the Exchange dataset)
 
 In addition, some hyperparameters related to the learning rate are given as follows:
 - Initial learning rate: 0.0002
 - Learning rate decay strategy：MultiStepLR
 - milestone = [1,15,25,50,75,100], gamme = 0.5
 - clip_grad_norm_: max_norm = 3
+- batch size: 32
 
 
 If the code is helpful to you, please cite the following paper:
