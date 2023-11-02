@@ -16,7 +16,7 @@ The core hyperparameters include the following parts:
 - muti_head：Number of muti_head attention. 1 to 4  (Note: In most cases, 1 or 2 is enough)
 - dropout：dropout. 0.15 to 0.3
 - num_samp：Number of subsequence. 2 or 3
-- IF_node: Whether to use variable embedding. True or False (Note: Set to True for all but the Exchange dataset)
+- IF_node: Whether to use variable embedding. True or False (Note: In most cases, set to True)
 
 In addition, some hyperparameters related to the learning rate are given as follows:
 - Initial learning rate: 0.0002
