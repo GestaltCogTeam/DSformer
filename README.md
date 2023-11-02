@@ -19,7 +19,7 @@ The core hyperparameters include the following parts:
 - IF_node: Whether to use variable embedding. True or False (Note: In most cases, set to True)
 
 In addition, some hyperparameters related to the learning rate are given as follows:
-- Initial learning rate: 0.0002
+- Initial learning rate: 0.0002 (Note: In the team's BasicTS environment, setting to 0.002 might be better. In this case, milestone = [1,5,15,25,50,75,100], gamme = 0.5)
 - Learning rate decay strategy：MultiStepLR
 - milestone = [1,15,25,50,75,100], gamme = 0.5
 - clip_grad_norm_: max_norm = 3
